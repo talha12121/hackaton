@@ -1,0 +1,26 @@
+.main_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.center_box{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.center_box a{
+    text-decoration: none;
+    width: 400px;
+    height: 150px;
+    border: 1px solid rgb(206, 206, 206);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(44, 44, 44);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

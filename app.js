@@ -34,7 +34,7 @@
         // Signed in 
         const user = userCredential.user;
         console.log("users", user);
-        window.location="new.html"
+        window.location="box.html"
         
         // ...
       })
