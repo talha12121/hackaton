@@ -2,7 +2,11 @@
 
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
-
+  import {
+    getAuth,
+    signInWithEmailAndPassword,
+    
+  } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
   const firebaseConfig = {
     apiKey: "AIzaSyCRUAzGqgSzMvOsymrQ0MoFx_rafL1e-P0",
     authDomain: "hackaton-533c5.firebaseapp.com",
@@ -18,26 +22,27 @@
   const analytics = getAnalytics(app);
 
 
-  const btn = document.getElementById("submit");
-btn.addEventListener("click", submit);
-   const login =()=>{
-    const login_email = document.getElementById("login-email");
+  const login =()=>{
+      const login_email = document.getElementById("login-email");
     const login_pass = document.getElementById("login-pass");
+    // if(login-email && login-pass == ""){
+    //     Swal.fire('All FIELDS REQUIRED')
+    // }
     const auth = getAuth();
     signInWithEmailAndPassword(auth, login_email.value, login_pass.value)
-  .then(async(userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    console.log("user", user);
-    window.location="new.html"
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    console.log("error");
-    console.log(errorMessage)
-  });
-   }
-   const loginBtn = document.getElementById("login");
-   loginBtn.addEventListener("click", login);
+    .then(async(userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        console.log("users", user);
+        window.location="new.html"
+        // ...
+    })
+    .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log("error");
+        console.log(errorMessage)
+    });
+}
+const loginBtn = document.getElementById("login");
+loginBtn.addEventListener("click", login);
