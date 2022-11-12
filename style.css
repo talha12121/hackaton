@@ -11,12 +11,17 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 .logout{
   border: none;
 }
-.heading h3{
+.heading h4{
     color:rgb(130, 169, 213);
-     font-size: 43px;
+     font-size: 30px;
      padding-top: 10px;
      font-family: "Poppins";
- }
+    }
+    .head {
+      
+  font-family: "Poppins";
+}
+
 .main{
     border: 1px solid rgb(211, 207, 207);
     text-align: center;
@@ -59,6 +64,103 @@ input{
 
     
 }
+.details{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(45, 49, 51);
+ 
+}
+
+/* LOGOUT */
+.logout{
+    font-family: "Poppins";
+    background-color: transparent;
+    font-size: 20px;
+
+}
                                  
+/* FORM */
+
+.main{
+    border: 1px solid rgb(211, 207, 207);
+    text-align: center;
+    margin-top: 60px;
+    width: 350px;
+    margin-left:520px ;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 15px;
+    height:350px
+}
+.email{
+    padding:10px;
+    text-align: center;
+    font-size: 20px;
+}
+.pass{
+    padding:10px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+    
+
+}
+input{
+    border: 1px solid rgba(164, 162, 215, 0.71);
+    outline: none;
+    width: 250px;
+    height:40px
+    
+    
+    
+}
+
+.btn:hover{
+    outline: none;
+    /* overflow: hidden; */
+    transition: .2s;
+    border: none;
+    background-color: rgb(43, 58, 226);
+
+    
+}
+                                                      /* LOGIN CSS */
+.sign-main{
+    border: 1px solid rgb(211, 207, 207);
+    text-align: center;
+    margin-top: 40px;
+    width: 370px;
+    margin-left:570px ;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 15px;
+    font-family: Poppins;
+    height:620px
+
+}
+.new-main{
+    border: 1px solid rgb(211, 207, 207);
+    text-align: center;
+    margin-top: 40px;
+    width: 370px;
+    margin-left:570px ;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 15px;
+    height:800px !important;
+    font-family: Poppins;
+
+}
+.fname,.lname{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.sch{
+    border: 1px solid rgba(164, 162, 215, 0.71);
+    outline: none;
+    width: 250px;
+    height:40px
+   
+}
 
 
+
+/* QUERIES */

@@ -35,13 +35,17 @@
         const user = userCredential.user;
         console.log("users", user);
         window.location="new.html"
+        
         // ...
-    })
-    .catch((error) => {
+      })
+      .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log("error");
         console.log(errorMessage)
+        swal(" USER NOT FOUND", {
+          button: "Try Again",
+        });
     });
 }
 const loginBtn = document.getElementById("login");
