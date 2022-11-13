@@ -85,7 +85,7 @@ next.addEventListener("click", async function () {
   const uploadFiles = (file) => {
     return new Promise((resolve, reject) => {
       const storage = getStorage();
-      let uid = auth.currentUser.uid;
+      let uid = new Date().getTime();
 
       const storageRef = ref(storage, `users/${uid}.png`);
       const uploadTask = uploadBytesResumable(storageRef, file);
