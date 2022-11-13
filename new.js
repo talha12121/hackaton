@@ -118,10 +118,10 @@ addClass.addEventListener("click", writeUserData);
 //   }
 // });
 
-// const logOut = document.getElementById("logout");
-// logOut.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   auth.signOut();
-//   window.location.replace("index.html")
-//   console.log("User signed out!");
-// });
+const logOut = document.getElementById("logout");
+logOut.addEventListener("click", (e) => {
+  e.preventDefault();
+  auth.signOut();
+  window.location.replace("index.html")
+  console.log("User signed out!");
+});

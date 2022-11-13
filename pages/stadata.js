@@ -149,6 +149,6 @@ const logOut = document.getElementById("logout");
 logOut.addEventListener("click", (e) => {
   e.preventDefault();
   auth.signOut();
-  window.location = "index.html";
+  window.location = "../index.html";
   console.log("User signed out!");
 });
